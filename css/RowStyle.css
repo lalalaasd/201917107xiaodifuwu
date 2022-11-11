@@ -1,0 +1,24 @@
+ul, .BP_section{
+    display: table;
+    width: 100%;
+    height: 80px;
+
+}
+
+ul li, .BP_a{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.content{
+    background-color: gray;
+}
+
+.content ul li{
+    background-color: white;
+}
+.special{
+    margin-bottom: 0;
+}

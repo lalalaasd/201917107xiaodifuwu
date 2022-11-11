@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="../css/first.css">
+    <link rel="styleSheet" href="../css/second.css">
+    <style>
+        .main_section{
+            border: 1px solid #dddddd;
+            background-color: white;
+            height: 100px;
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .input_user, .input_psw{
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .input_user{
+            border-bottom: 1px  #dddddd;
+
+        }
+
+        input{
+            border: none;
+            outline: none;
+            margin-left: 10px;
+        }
+        .main_section span{
+            margin-left: 15px;
+            font-weight: 600;
+        }
+        .login_div{
+            width: 80%;
+            margin: 0 auto;
+            background-color: #1c6dc0;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 40px;
+        }
+        .login_div button{
+            background-color: #1c6dc0;
+            color: white;
+            border: none;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <p class="header_p">登陆</p>
+    </header>
+
+    <!-- 头像 -->
+    <section style="text-align: center;">
+        <img style="margin-top: 20%;" src="../原型图/Resource/head.png" alt="">
+    </section>
+
+    <!-- 主内容 -->
+    <section class="main_section">
+        <div class="input_user">
+            <span>账号：</span>
+            <input type="text">
+            <hr>
+        </div>
+        <div class="input_psw">
+            <span>密码：</span>
+            <input type="password">
+        </div>
+        <div class="login_div">
+            <a href="DropleService.html">
+                <button>登&emsp;陆</button>
+            </a>
+        </div>
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="../css/first.css">
+    <link rel="styleSheet" href="../css/second.css">
+    <link rel="styleSheet" href="../css/RowStyle.css">
+    <script src="../css/CommonJS.js"></script>
+    <style>
+        .main_section{
+            width: 90%;
+            margin: 10px auto 100px auto;
+        }
+        #main_h1{
+            color: red;
+            line-height: 60px;
+            font-size: 22px;
+        }
+        #main_h3{
+            border-top: 1px solid rgb(150, 150, 150);
+            font-size: 16px;
+            line-height: 30px;
+        }
+        #main_p{
+            text-indent: 2rem;
+            line-height: 2em;
+            font-size: 13px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="header_p">平台风采</p>
+    </header>
+
+    <section class="second_section">
+        <img src="../原型图/Resource/banner4.png" alt="图片加载失败">
+    </section>
+
+    <!-- 主内容区域 -->
+    <section class="main_section">
+        <h1 id="main_h1"></h1>
+        <h3 id="main_h3"></h3>
+        <p id="main_p"></p>
+    </section>
+
+
+    <!-- 底部区域 -->
+    <footer>
+        <a href="DropleService.html">
+            <img src="../原型图/Resource/nav10.png" alt="图片加载失败">
+            <p>小滴服务</p>
+        </a>
+        <a href="BusinessProject.html">
+            <img src="../原型图/Resource/nav20.png" alt="图片加载失败">
+            <p>企业项目</p>
+        </a>
+        <a href="ServiceProcess.html">
+            <img src="../原型图/Resource/nav30.png" alt="图片加载失败">
+            <p>服务流程</p>
+        </a>
+        <a href="Platform.html">
+            <img src="../原型图/Resource/nav41.png" alt="图片加载失败">
+            <p style="color: red;">平台风采</p>
+        </a>
+        <a href="MyDrople.html">
+            <img src="../原型图/Resource/nav50.png" alt="图片加载失败">
+            <p>我的小滴</p>
+        </a>
+    </footer>
+</body>
+</html>
+<script>
+    requestData("get", "aboutus", function (res) {
+        var m1 = document.getElementById("main_h1");
+        var m2 = document.getElementById("main_h3");
+        var m3 = document.getElementById("main_p");
+        
+        m1.innerText = res.data.title;
+        m2.innerHTML = res.data.subTitle;
+        m3.innerHTML = res.data.info;
+    });
+</script>

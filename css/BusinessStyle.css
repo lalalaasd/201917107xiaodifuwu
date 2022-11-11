@@ -1,0 +1,17 @@
+.main_section div p{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.main_section div img{
+    width: 100%;
+}
+
+.main_section div .main_p{
+    color: #8d8d8d;
+    font-size: 10px;
+    padding: 3px 20px;
+    text-align: left;
+}

@@ -1,0 +1,60 @@
+header{
+    background-color: #1c6dc0;
+    text-align: center;
+    color: white;
+    /* height: 48px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    line-height: 44px;
+    font-size: 18px;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.second_section img{
+    width: 100%;
+}
+
+
+/* .forth_section{
+    background-color: black;
+    color: white;
+} */
+
+footer{
+    display: table;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    height: 66px;
+    position: sticky;
+    bottom: 0;
+    /* left: 0;
+    right: 0; */
+}
+
+footer a{
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+div{
+ /* padding: 2% 5% 20% 5%; */
+ margin: 20px;
+ margin-bottom: 200px;
+}
+
+div p img{
+    width: 100%;
+}
